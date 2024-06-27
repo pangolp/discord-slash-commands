@@ -1,0 +1,50 @@
+name: Informe de error
+description: Crea un informe de errores para ayudarnos a mejorar.
+title: "Bug: "
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: Comportamiento actual
+      description: |
+        Descripción del problema o asunto aquí.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: |
+        Cuéntanos qué debería suceder en su lugar.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Pasos para reproducir el problema
+      description: |
+        ¿Qué debe hacer otra persona para encontrarse con el mismo error?
+      placeholder: |
+        1. Paso 1
+        2. Paso 2
+        3. Paso 3
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operativo
+      description: |
+        El sistema operativo en el que se ejecuta el servidor.
+        ej. Windows 11 x64, Debian 10 x64, macOS 12, Ubuntu 20.04
+    validations:
+      required: true
+  - type: textarea
+    id: node
+    attributes:
+      label: Versión del node y npm
+      description: |
+        Ejecute el comando `node --version` en la terminal / cmd y complete los detalles de la versión aquí.
+        También puedes agregar la versión npm con `npm --version`.
+    validations:
+      required: true
