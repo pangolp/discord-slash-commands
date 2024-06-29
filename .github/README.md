@@ -4,7 +4,23 @@ Este bot, esta desarrollado utilizando discord.js, siguiendo el tutorial del [si
 
 Cuenta con la estructura básica, que necesita un bot para su funcionamiento.
 
-Los comandos, son añadidos dentro de la carpeta `slash_commands`. 
+Los comandos, son añadidos dentro de la carpeta `slash_commands`.
+
+## Estructura basica del bot
+
+```
+random-number-js
+|-- config.json
+|-- index.js
+|-- package-lock.json
+|-- package.json
+`-- slash_commands
+    |-- avatar.js
+    |-- random.js
+    `-- say.js
+
+1 directory, 7 files
+```
 
 ## ¿Como utilizarlo?
 
